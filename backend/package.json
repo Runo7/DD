@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Supabase-backed API for the Handwerker-App prototype",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "supabase",
+    "api",
+    "handwerker"
+  ],
+  "author": "",
+  "license": "MIT"
+}
