@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwerker Planer - Mitarbeiter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-hammer"></i> PlanerPro
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+            <li><a href="planning.html"><i class="fas fa-calendar-alt"></i> Einsatzplanung</a></li>
+            <li><a href="employees.html" class="active"><i class="fas fa-users"></i> Mitarbeiter</a></li>
+            <li><a href="documents.html"><i class="fas fa-folder-open"></i> Dokumente</a></li>
+            <li><a href="settings.html"><i class="fas fa-cog"></i> Einstellungen</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Mitarbeiter</h1>
+            <p>Übersicht über alle Angestellten und Crews.</p>
+        </header>
+
+        <div class="stats-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+            <!-- Employee Card 1 -->
+            <div class="card" style="text-align: center; align-items: center;">
+                <div
+                    style="width: 80px; height: 80px; background-color: #eee; border-radius: 50%; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #aaa;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="color: var(--text-color); margin-bottom: 5px;">Max Mustermann</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Vorarbeiter</p>
+                <div style="display: flex; gap: 10px;">
+                    <span
+                        style="background-color: rgba(80, 227, 194, 0.2); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem;">Verfügbar</span>
+                </div>
+            </div>
+
+            <!-- Employee Card 2 -->
+            <div class="card" style="text-align: center; align-items: center;">
+                <div
+                    style="width: 80px; height: 80px; background-color: #eee; border-radius: 50%; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #aaa;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="color: var(--text-color); margin-bottom: 5px;">Julia Schmidt</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Elektrikerin</p>
+                <div style="display: flex; gap: 10px;">
+                    <span
+                        style="background-color: rgba(74, 144, 226, 0.2); color: var(--primary-color); padding: 4px 8px; border-radius: 12px; font-size: 0.8rem;">Im
+                        Einsatz</span>
+                </div>
+            </div>
+
+            <!-- Employee Card 3 -->
+            <div class="card" style="text-align: center; align-items: center;">
+                <div
+                    style="width: 80px; height: 80px; background-color: #eee; border-radius: 50%; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #aaa;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="color: var(--text-color); margin-bottom: 5px;">Peter Müller</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px;">Installateur</p>
+                <div style="display: flex; gap: 10px;">
+                    <span
+                        style="background-color: rgba(255, 99, 71, 0.1); color: #ff6347; padding: 4px 8px; border-radius: 12px; font-size: 0.8rem;">Krank</span>
+                </div>
+            </div>
+            <!-- Add New -->
+            <div class="card"
+                style="text-align: center; align-items: center; justify-content: center; border: 2px dashed #e0e0e0; background-color: transparent; cursor: pointer;">
+                <i class="fas fa-plus" style="font-size: 2rem; color: #ccc;"></i>
+                <p style="margin-top: 10px; color: var(--text-muted);">Mitarbeiter hinzufügen</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
